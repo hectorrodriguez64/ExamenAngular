@@ -4,6 +4,7 @@
         <table class="table table-hover">
             <thead>
                 <tr>
+                  <th>Código Ficha</th>
                     <th>Nombre</th>
                     <th>Fecha</th>
                     <th>Horas</th>
@@ -13,13 +14,16 @@
             </thead>
             <tbody>
                 <tr ng-repeat="item in vm.parqueoa">
+                  <td>
+                    {{item.codigoFicha}}
+                  </td>
                     <td>{{item.idCliente.nombre}}</td>
                     <td>{{item.fecha}}</td>
                     <td>{{item.horas}}</td>
                     <td>{{item.precio}}</td>
                     <td>{{item.matricula.matricula}}</td>
                     <td>
-                      <a class="btn btn-primary" ui-sref="users-update({idUser:item.id})">Editar</a>
+                      <a class="btn btn-primary" ui-sref="users-update({idUser:item.id})">Salir</a>
                     </td>
                 </tr>
             </tbody>

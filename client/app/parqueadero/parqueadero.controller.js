@@ -31,10 +31,10 @@ buscarParqueo(){
   		this.itemCodigo.precio = this.itemCodigo.horas * 2
   	}
   	else if(this.itemCodigo.horas <= 5){
-  		this.itemCodigo.precio = ((this.itemCodigo.horas-3)*1.5) + 2
+  		this.itemCodigo.precio = ((this.itemCodigo.horas-3)*1.5) + 6
   	}
   	else if(this.itemCodigo.horas > 5){
-  		this.itemCodigo.precio = (((this.itemCodigo.horas-5)*1.5)+4.5)
+  		this.itemCodigo.precio = (((this.itemCodigo.horas-5)*1.5)+9)
   		this.descuento = this.itemCodigo.precio * 0.05
   		this.itemCodigo.precio = this.itemCodigo.precio-this.descuento
     }

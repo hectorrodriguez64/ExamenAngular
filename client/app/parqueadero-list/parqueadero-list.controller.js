@@ -19,7 +19,8 @@ class ParqueaderoListComponent {
 angular.module('paraisoCiclistaApp')
   .component('parqueaderoList', {
     templateUrl: 'app/parqueadero-list/parqueadero-list.html',
-    controller: ParqueaderoListComponent
+    controller: ParqueaderoListComponent,
+    controllerAs: 'vm'
   });
 
 })();
