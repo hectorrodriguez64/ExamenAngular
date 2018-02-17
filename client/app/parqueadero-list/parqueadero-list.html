@@ -1,0 +1,28 @@
+<div class="Fondo">
+    <section class="container" ng-cloak="">
+        <h2>Lista de Parqueo</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Horas</th>
+                    <th>Precio</th>
+                    <th>Matricula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in vm.parqueoa">
+                    <td>{{item.idCliente.nombre}}</td>
+                    <td>{{item.fecha}}</td>
+                    <td>{{item.horas}}</td>
+                    <td>{{item.precio}}</td>
+                    <td>{{item.matricula.matricula}}</td>
+                    <td>
+                      <a class="btn btn-primary" ui-sref="users-update({idUser:item.id})">Editar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>

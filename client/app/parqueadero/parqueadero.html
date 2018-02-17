@@ -1,0 +1,73 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table-bordered">
+				<div class="form-group">
+					<h2>Servicio de Parqueadero</h2>
+					<label for="">Codigo de Ficha</label>
+					<input
+					type="text"
+					class="form-control"
+					ng-model="vm.parqueo.codigoFicha">
+						<button type="button" name="button" ng-click="vm.buscarParqueo()">Buscar</button>
+				</div>
+				<div class="list-group" >
+					<ul>
+						<li>Nombre: {{vm.itemCodigo.idCliente.nombre}}</li>
+						<li>Fecha: {{vm.itemCodigo.fecha}}</li>
+						<li>Horas: {{vm.itemCodigo.horas}}</li>
+						<li>Precio: {{vm.itemCodigo.precio}}</li>
+						<li>Matricula: {{vm.itemCodigo.matricula.matricula}}</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<form name='formParqueo' ng-submit="vm.valorParqueo()">
+				<div class="form-group">
+					<label for="">Numero Ficha</label>
+					<input type="text" ng-model="vm.parqueo.codigoFicha">
+				</div>
+				<div class="form-group">
+					<label for="">Tiempo de parqueo</label>
+					<input type="number" ng-model="vm.parqueo.horas">
+				</div>
+
+				<div class="form-group">
+					<button type="button" ng-click="vm.valorParqueo()">calcular</button>
+	<option  ng-value="item.codigoFicha" ng-repeat="item in vm.parqueo">{{item.codigoFicha}}</option>
+				</div>
+				<div class="form-group">
+					<input type="number" ng-model="vm.parqueo.precio">
+				</div>
+
+			</form>
+			<div ng-repeat="item in vm.itemCodigo">
+				<h2>tiempo:{{vm.horas}}</h2>
+				<h2>valor a pagar:{{vm.valor}}</h2>
+				<h2>descuento:{{vm.descuento}}</h2>
+				<h2>valor a pagar con descuento:{{vm.total}}</h2>
+			</div>
+-->
